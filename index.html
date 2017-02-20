@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<script type="text/javascript" src="js/modernizr-2.8.3.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<title>Web Form</title>
+</head>
+<body>
+	<header>
+		
+	</header>
+	<form id="subscribe-form" action="#" method="post">
+		<h1>Subscribe</h1>
+		<p id="required-info">Required information is marked by <abbr title="required">*</abbr></p>
+		
+		<section>
+			<h3>Administrator Information</h3>
+			
+			<div>
+				<label for="first-name">
+					<span>First Name</span>
+					<input type="text" id="first-name" class="required" name="first-name" autofocus title="Required. Only letters, digits, and spaces are valid" />
+					<abbr>*</abbr>
+					<p class="err-msg"></p>
+				</label>
+			</div>
+			
+			<div>
+				<label for="last-name">
+					<span>Last Name</span>
+					<input type="text" id="last-name" class="required" name="last-name" title="Required. Only letters, spaces, and hypens(-) are valid" />
+					<abbr>*</abbr>
+					<p class="err-msg"></p>
+				</label>
+			</div>
+			
+			<div>
+				<label for="dob">
+					<span>Date of Birth</span>
+					<input type="text" id="dob" class="required" name="dob" placeholder="mm/dd/yy or mm/dd/yyyy" title="Required. Only digits and /s are valid" />
+					<abbr>*</abbr>
+					<p class="err-msg"></p>
+				</label>
+			</div>
+			
+			<div>
+				<label for="street">
+					<span>Street</span>
+					<input type="text" id="street" class="required" name="street" title="Required. Maximum length of 75 characters" />
+					<abbr>*</abbr>
+					<p class="err-msg"></p>
+				</label>
+			</div>
+			
+			<div>
+				<label for="city">
+					<span>City</span>
+					<input type="text" id="city" class="required" name="city" title="Required. Only letters, spaces, and hypens(-) are valid" />
+					<abbr>*</abbr>
+					<p class="err-msg"></p>
+				</label>
+			</div>
+			
+			<div>
+				<label for="state">
+					<span>State</span>
+					<select id="state" name="state" class="required" title="Required. Select a State">
+						<option value="select-a-state" selected="selected">Select a State</option>
+						<option value="Alabama">AL</option>
+						<option value="Alaska">AK</option>
+						<option value="Arizona">AZ</option>
+						<option value="Arkansas">AR</option>
+						<option value="California">CA</option>
+						<option value="Colorado">CO</option>
+						<option value="Connecticut">CT</option>
+						<option value="Delaware">DE</option>
+						<option value="Florida">FL</option>
+						<option value="Georgia">GA</option>
+						<option value="Hawaii">HI</option>
+						<option value="Idaho">ID</option>
+						<option value="Illinois">IL</option>
+						<option value="Indiana">IN</option>
+						<option value="Iowa">IA</option>
+						<option value="Kansas">KS</option>
+						<option value="Kentucky">KY</option>
+						<option value="Lousiana">LA</option>
+						<option value="Maine">ME</option>
+						<option value="Maryland">MD</option>
+						<option value="Massachusetts">MA</option>
+						<option value="Michigan">MI</option>
+						<option value="Minnesota">MN</option>
+						<option value="Mississippi">MS</option>
+						<option value="Missouri">MO</option>
+						<option value="Montana">MT</option>
+						<option value="Nebraska">NE</option>
+						<option value="Nevada">NV</option>
+						<option value="New Hampshire">NH</option>
+						<option value="New Jersey">NJ</option>
+						<option value="New Mexico">NM</option>
+						<option value="New York">NY</option>
+						<option value="North Carolina">NC</option>
+						<option value="North Dakota">ND</option>
+						<option value="Ohio">OH</option>
+						<option value="Oklahoma">OK</option>
+						<option value="Oregon">OR</option>
+						<option value="Pennsylvania">PA</option>
+						<option value="Rhode Island">RI</option>
+						<option value="South Carolina">SC</option>
+						<option value="South Dakota">SD</option>
+						<option value="Tennessee">TN</option>
+						<option value="Texas">TX</option>
+						<option value="Utah">UT</option>
+						<option value="Vermont">VT</option>
+						<option value="Virginia">VA</option>
+						<option value="Washington">WA</option>
+						<option value="West Virginia">WV</option>
+						<option value="Wisconsin">WI</option>
+						<option value="Wyoming">WY</option>
+					</select>
+					<abbr>*</abbr>
+					<p class="err-msg"></p>
+				</label>
+			</div>
+			
+			<div>
+				<label for="zip-code">
+					<span>Zip Code</span>
+					<input type="text" id="zip-code" class="required" name="zip-code" title="Required. Only 5 digits are valid" />
+					<abbr>*</abbr>
+					<p class="err-msg"></p>
+				</label>
+			</div>
+			
+			<div>
+				<label for="company-name">
+					<span>Company Name</span>
+					<input type="text" id="company-name" class="required" name="company-name" title="Required. Only letters, digits, spaces, special chars (.,&_-+) are valid" />
+					<abbr>*</abbr>
+					<p class="err-msg"></p>
+				</label>
+			</div>
+			
+			<div>
+				<label for="office-phone">
+					<span>Office Phone</span>
+					<input type="text" id="office-phone" name="office-phone" placeholder="###-###-####" title="Optional. Only 10 digits are valid" />
+					<abbr></abbr>
+					<p class="err-msg"></p>
+				</label>
+			</div>
+			
+			<div>
+				<label for="cell-phone">
+					<span>Cell Phone</span>
+					<input type="text" id="cell-phone" name="cell-phone" placeholder="###-###-####" title="Optional. Only 10 digits are valid" />
+					<abbr></abbr>
+					<p class="err-msg"></p>
+				</label>
+			</div>
+			
+			<div>
+				<label for="email">
+					<span>Email</span>
+					<input type="text" id="email" class="required" name="email" title="Required. Enter a valid email" />
+					<abbr>*</abbr>
+					<p class="err-msg"></p>
+				</label>
+			</div>
+			
+			<div>
+				<label for="username">
+					<span>Username</span>
+					<input type="text" id="username" class="required" name="username" title="Required. At least 5 characters.  Only letters and digits are valid" />
+					<abbr>*</abbr>
+					<p class="err-msg"></p>
+				</label>
+			</div>
+			
+			<div>
+				<label for="password">
+					<span>Password</span>
+					<input type="password" id="password" class="required" name="password" title="Required. 8-16 characters.  At least one lower case, upper case, digit, and special character (!@#$%^&*-_+=.~?/\|{}[]()<>,:; ') are valid" />
+					<abbr>*</abbr>
+					<p class="err-msg"></p>
+				</label>
+			</div>
+		</section>
+			
+		<section>
+			<h3>Payment Information</h3>
+			
+			<div>
+				<label for="card-name">
+					<span>Card Holder's Name</span>
+					<input type="text" id="card-name" class="required" name="card-name" title="Required. Only letters and spaces are valid" />
+					<abbr>*</abbr>
+					<p class="err-msg"></p>
+				</label>
+			</div>
+			
+			<div>
+				<label for="card">
+					<span>Card Type:</span>
+					<select id="card-type" name="card-type">
+						<option value="visa" selected="selected">Visa</option>
+						<option value="mc">MasterCard</option>
+						<option value="amex">American Express</option>
+					</select>
+					<abbr>*</abbr>
+				</label>
+				<p class="err-msg"></p>
+			</div>
+			
+			<div>
+				<label for="card-number">
+					<span>Card Number</span>
+					<input type="text" id="card-number" class="required" name="card-number"  placeholder="#### #### #### ####" title="Required. Invalid. Only digits are valid" />
+					<abbr>*</abbr>
+					<p class="err-msg"></p>
+				</label>
+			</div>
+			
+			<div>
+				<label for="expiration-date">
+					<span>Expiration Date</span>
+					<input type="text" id="expiration-date" class="required" name="expiration-date" placeholder="mm/yy or mm/yyyy" title="Required. Only digits and /s are valid" />
+					<abbr>*</abbr>
+					<p class="err-msg"></p>
+				</label>
+			</div>
+			
+			<div>
+				<label for="security-code">
+					<span>Security Code</span>
+					<input type="text" id="security-code" class="required" name="security-code" title="Required. Only 3 or 4 digits are valid" />
+					<abbr>*</abbr>
+					<p class="err-msg"></p>
+				</label>
+			</div>
+		</section>
+		
+		<section>
+			<div id="subscribe">
+				<button id="subscribe-button">Subscribe</button>
+				<button id="reset-button">Reset</button>
+			</div>
+		</section>
+	</form>
+</body>
+<footer>
+	
+</footer>
